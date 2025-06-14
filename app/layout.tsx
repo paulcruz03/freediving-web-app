@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik, Afacad_Flux } from "next/font/google";
 import "./globals.css";
 import { Menu } from "@/components/Menu";
+import { Footer } from "@/components/Footer";
 
 const rubik = Rubik({
   variable: "--font-rubik",
@@ -30,6 +31,7 @@ export default function RootLayout({
       >
         <Menu />
         {children}
+        <Footer />
       </body>
     </html>
   );
